@@ -23,7 +23,11 @@
 
 , "inAHome": ["in #prefixedHome.a#"]
 , "prefixedHome": "#homePrefix# #home#"
-, "home": ["cave", "dungeon", "mushroom forest", "grotto", "house", "swamp", "valley", "#active# volcano"]
-, "homePrefix": ["abandoned", "flooded", "haunted", "remote"]
-, "active": ["active", "inactive"]
+, "homePrefix": ["abandoned", "burnt", "flooded", "forgotten", "frozen", "haunted", "remote", "uncharted"]
+, "home": ["cave", "#dungeon#", "#forest#", "grotto", "#house#", "mountain", "swamp", "#town#", "valley", "#activeOrInactive# volcano"]
+, "dungeon": ["dungeon", "shrine", "temple"]
+, "forest": ["clearing", "forest", "grove", "mushroom forest", "wood"]
+, "house": ["cottage", "house", "hut", "mansion", "shack"]
+, "town": ["city", "hamlet", "metropolis", "thorp", "town", "village"]
+, "activeOrInactive": ["active", "inactive"]
 }
