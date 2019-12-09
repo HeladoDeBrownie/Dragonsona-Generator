@@ -21,7 +21,9 @@
 
 , "unusualDragonType": ["fairy", "galaxy", "#color# glitter", "pseudo", "rainbow", "translucent"]
 
-, "inAHome": ["in #home.a#"]
-, "home": ["cave", "abandoned dungeon", "mushroom forest", "grotto", "haunted house", "swamp", "remote valley", "#active# volcano"]
+, "inAHome": ["in #prefixedHome.a#"]
+, "prefixedHome": "#homePrefix# #home#"
+, "home": ["cave", "dungeon", "mushroom forest", "grotto", "house", "swamp", "valley", "#active# volcano"]
+, "homePrefix": ["abandoned", "flooded", "haunted", "remote"]
 , "active": ["active", "inactive"]
 }
