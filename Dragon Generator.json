@@ -1,0 +1,17 @@
+{ "origin": "Your name is #name#. Your parents are #parent# and #parent#. You live in #home#."
+, "name": "#_name.capitalize#"
+, "_name": ["#namePart#", "#namePart##namePart#", "#namePart##_name#"]
+, "namePart": "#vowel##consonant#"
+, "consonant": ["b", "c", "m", "r", "s", "sh", "t", "th", "v", "w", "y", "z"]
+, "vowel": ["a", "æ", "e", "i", "o", "u", "y"]
+, "parent": ["#name# the #dragon#"]
+, "dragon": ["#scale# dragon"]
+, "scale": ["#chromaticScale#", "#gemScale#", "#metalScale#", "#weirdScale#"]
+, "chromaticScale": ["black", "blue", "brown", "cyan", "grey", "green", "magenta", "purple", "red", "yellow", "white"]
+, "gemScale": ["amethyst", "diamond", "emerald", "ruby", "sapphire", "topaz", "#rareGemScale#"]
+, "rareGemScale": ["jasper", "moonstone", "opal", "peridot"]
+, "metalScale": ["adamantium", "brass", "bronze", "copper", "gold", "iron", "mithryl", "silver", "steel", "titanium"]
+, "weirdScale": ["fairy", "galaxy", "#chromaticScale# glitter", "pseudo", "rainbow", "translucent"]
+, "home": ["a cave", "an abandoned dungeon", "a mushroom forest", "a grotto", "a haunted house", "a swamp", "a remote valley", "an #active# volcano"]
+, "active": ["active", "inactive"]
+}
