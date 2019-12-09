@@ -1,17 +1,27 @@
-{ "origin": "Your name is #name#. Your parents are #parent# and #parent#. You live in #home#."
-, "name": "#_name.capitalize#"
-, "_name": ["#namePart#", "#namePart##namePart#", "#namePart##_name#"]
-, "namePart": "#vowel##consonant#"
-, "consonant": ["b", "c", "m", "r", "s", "sh", "t", "th", "v", "w", "y", "z"]
-, "vowel": ["a", "æ", "e", "i", "o", "u", "y"]
-, "parent": ["#name# the #dragon#"]
-, "dragon": ["#scale# dragon"]
-, "scale": ["#chromaticScale#", "#gemScale#", "#metalScale#", "#weirdScale#"]
-, "chromaticScale": ["black", "blue", "brown", "cyan", "grey", "green", "magenta", "purple", "red", "yellow", "white"]
-, "gemScale": ["amethyst", "diamond", "emerald", "ruby", "sapphire", "topaz", "#rareGemScale#"]
-, "rareGemScale": ["jasper", "moonstone", "opal", "peridot"]
-, "metalScale": ["adamantium", "brass", "bronze", "copper", "gold", "iron", "mithryl", "silver", "steel", "titanium"]
-, "weirdScale": ["fairy", "galaxy", "#chromaticScale# glitter", "pseudo", "rainbow", "translucent"]
-, "home": ["a cave", "an abandoned dungeon", "a mushroom forest", "a grotto", "a haunted house", "a swamp", "a remote valley", "an #active# volcano"]
+{ "origin": "Your name is #dragonName#. Your parents are #parent# and #parent#. You live #inAHome#."
+
+, "dragonName": "#_dragonName.capitalize#"
+, "_dragonName": ["#dragonNamePart#", "#dragonNamePart##dragonNamePart#", "#dragonNamePart##_dragonName#"]
+, "dragonNamePart": "#dragonNameVowel##dragonNameConsonant#"
+, "dragonNameConsonant": ["b", "c", "m", "r", "s", "sh", "t", "th", "v", "w", "y", "z"]
+, "dragonNameVowel": ["a", "æ", "e", "i", "o", "u", "y"]
+
+, "parent": ["#dragonName# the #dragon#"]
+
+, "dragon": ["#dragonType# dragon"]
+, "dragonType": ["#color#", "#gem#", "#metal#", "#unusualDragonType#"]
+
+, "color": ["black", "blue", "brown", "cyan", "grey", "green", "magenta", "purple", "red", "yellow", "white"]
+
+, "gem": ["amethyst", "diamond", "emerald", "ruby", "sapphire", "topaz", "#rareGem#"]
+, "rareGem": ["jasper", "moonstone", "opal", "peridot"]
+
+, "metal": ["brass", "bronze", "copper", "gold", "iron", "silver", "steel", "#rareMetal#"]
+, "rareMetal": ["adamantium", "mercury", "mithryl", "platinum", "titanium"]
+
+, "unusualDragonType": ["fairy", "galaxy", "#color# glitter", "pseudo", "rainbow", "translucent"]
+
+, "inAHome": ["in #home.a#"]
+, "home": ["cave", "abandoned dungeon", "mushroom forest", "grotto", "haunted house", "swamp", "remote valley", "#active# volcano"]
 , "active": ["active", "inactive"]
 }
