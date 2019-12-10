@@ -14,10 +14,13 @@
 , "color": ["black", "blue", "brown", "cyan", "grey", "green", "magenta", "purple", "red", "yellow", "white"]
 
 , "gem": ["amethyst", "diamond", "emerald", "ruby", "sapphire", "topaz", "#rareGem#"]
-, "rareGem": ["jasper", "moonstone", "opal", "peridot"]
+, "rareGem": ["aquamarine", "bismuth", "bloodstone", "fluorite", "garnet", "jade", "jasper", "lapislazuli", "malachite", "moonstone", "obsidian", "onyx", "opal", "pearl", "peridot", "spinel", "turquoise"]
 
-, "metal": ["brass", "bronze", "copper", "gold", "iron", "silver", "steel", "#rareMetal#"]
-, "rareMetal": ["adamantium", "mercury", "mithryl", "platinum", "titanium"]
+, "metal": "#[#setMetal#]_metal#"
+, "_metal": "#maybeDamaged##name#"
+, "maybeDamaged": ["", "", "", "", "", "", "", "", "", "#damaged# "]
+, "setMetal": ["[name:brass][damaged:tarnished]", "[name:bronze][damaged:tarnished]", "[name:copper][damaged:tarnished]", "[name:gold][damaged:tarnished]", "[name:iron][damaged:rusted]", "[name:silver][damaged:tarnished]", "[name:steel][damaged:rusted]", "#rareMetal#"]
+, "rareMetal": ["[name:adamantium][damaged:faded]", "[name:mercury][damaged:contaminated]", "[name:mithryl][damaged:faded]", "[name:platinum][damaged:tarnished]", "[name:titanium][damaged:tarnished]"]
 
 , "unusualDragonType": ["fairy", "galaxy", "#color# glitter", "pseudo", "rainbow", "translucent"]
 
