@@ -52,7 +52,8 @@ var grammar = tracery.createGrammar({
         'red',
         'yellow',
         'white',
-    ], gem: [
+    ],
+    gem: [
         'amethyst',
         'diamond',
         'emerald',
@@ -60,7 +61,8 @@ var grammar = tracery.createGrammar({
         'sapphire',
         'topaz',
         '#unusualGem#',
-    ], unusualGem: [
+    ],
+    unusualGem: [
         'aquamarine',
         'bismuth',
         'bloodstone',
