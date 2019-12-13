@@ -39,22 +39,26 @@ var grammar = tracery.createGrammar({
     ],
     dragonNameVowel: [
         'a',
+        'aa',
         'æ',
         'au',
         'e',
         'ea',
         'i',
+        'ii',
         'o',
         'u',
         'y',
     ],
     dragonNameFinalVowel: [
         'a',
+        // no aa
         'æ',
         // no au
         'e',
         'ea',
         // no i
+        // no ii
         // no o
         'u',
         // no y
