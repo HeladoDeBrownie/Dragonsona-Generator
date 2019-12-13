@@ -3,11 +3,12 @@ var grammar = tracery.createGrammar({
 
     dragonName: '#_dragonName.capitalize#',
     _dragonName: [
-        '#dragonNamePart#',
-        '#dragonNamePart##dragonNamePart#',
+        '#dragonNamePart##dragonNameFinalVowel#',
+        '#dragonNamePart##dragonNameFinalPart#',
         '#dragonNamePart##_dragonName#',
     ],
     dragonNamePart: '#dragonNameVowel##dragonNameConsonant#',
+    dragonNameFinalPart: '#dragonNameVowel##dragonNameFinalConsonant#',
     dragonNameConsonant: [
         'b',
         'c',
@@ -22,6 +23,20 @@ var grammar = tracery.createGrammar({
         'y',
         'z',
     ],
+    dragonNameFinalConsonant: [
+        'b',
+        'c',
+        'm',
+        'r',
+        's',
+        'sh',
+        't',
+        'th',
+        // no v
+        // no w
+        // no y
+        // no z
+    ],
     dragonNameVowel: [
         'a',
         'æ',
@@ -32,6 +47,17 @@ var grammar = tracery.createGrammar({
         'o',
         'u',
         'y',
+    ],
+    dragonNameFinalVowel: [
+        'a',
+        'æ',
+        // no au
+        'e',
+        'ea',
+        // no i
+        // no o
+        'u',
+        // no y
     ],
 
     parent: '#dragonName# the #dragon#',
@@ -87,15 +113,7 @@ var grammar = tracery.createGrammar({
     metal: '#[damaged:tarnished][#setMetal#]_metal#',
     _metal: '#maybeDamaged##name#',
     maybeDamaged: [
-        '',
-        '',
-        '',
-        '',
-        '',
-        '',
-        '',
-        '',
-        '',
+        '', '', '', '', '', '', '', '', '',
         '#damaged# ',
     ],
     setMetal: [
