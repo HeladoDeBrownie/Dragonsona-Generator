@@ -1,5 +1,5 @@
 var grammar = tracery.createGrammar({
-    origin: 'Your name is #dragonName#. Your parents are #parent# and #parent#. You live #inAHome#. The thing you prize most is #prizedThing#.',
+    origin: 'Your name is #dragonName#. Your parents are #parent# and #parent#. You live #inAHome#. #prizedThingSentence#',
 
     dragonName: '#_dragonName.capitalize#',
     _dragonName: [
@@ -202,10 +202,16 @@ var grammar = tracery.createGrammar({
         'inactive',
     ],
 
+    prizedThingSentence: [
+        "#prizedThing.capitalize# is what you hold most dear.",
+        "Of all the things in the world, you most treasure #prizedThing#.",
+        "The thing you prize most is #prizedThing#.",
+        "You assign the most value out of all things to #prizedThing#.",
+    ],
     prizedThing: [
         "books",
         "#fairness#",
-        "food",
+        "#food#",
         "#power#",
         "#riches#",
         "#vengeance#",
@@ -213,6 +219,11 @@ var grammar = tracery.createGrammar({
     fairness: [
         "fairness",
         "justice",
+    ],
+    food: [
+        "food",
+        "good food",
+        "sustenance",
     ],
     power: [
         "might",
