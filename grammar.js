@@ -1,5 +1,5 @@
 var grammar = tracery.createGrammar({
-    origin: 'Your name is #dragonName#. Your parents are #parent# and #parent#. You live #inAHome#.',
+    origin: 'Your name is #dragonName#. Your parents are #parent# and #parent#. You live #inAHome#. The thing you prize most is #prizedThing#.',
 
     dragonName: '#_dragonName.capitalize#',
     _dragonName: [
@@ -200,7 +200,36 @@ var grammar = tracery.createGrammar({
     activeOrInactive: [
         'active',
         'inactive',
-    ]
+    ],
+
+    prizedThing: [
+        "books",
+        "#fairness#",
+        "food",
+        "#power#",
+        "#riches#",
+        "#vengeance#",
+    ],
+    fairness: [
+        "fairness",
+        "justice",
+    ],
+    power: [
+        "might",
+        "power",
+        "strength",
+    ],
+    riches: [
+        "gems",
+        "gold",
+        "jewels",
+        "riches",
+        "treasure",
+    ],
+    vengeance: [
+        "revenge",
+        "vengeance",
+    ],
 })
 
 grammar.addModifiers(baseEngModifiers)
