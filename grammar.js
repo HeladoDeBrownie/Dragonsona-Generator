@@ -203,7 +203,6 @@ var grammar = tracery.createGrammar({
     ],
 
     prizedThingSentence: [
-        "#prizedThing.capitalize# is what you hold most dear.",
         "Of all the things in the world, you most treasure #prizedThing#.",
         "The thing you prize most is #prizedThing#.",
         "You assign the most value out of all things to #prizedThing#.",
