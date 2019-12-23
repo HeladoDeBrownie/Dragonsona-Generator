@@ -1,78 +1,21 @@
 var grammar = tracery.createGrammar({
-    origin: 'Your name is #dragonName#. Your parents are #parent# and #parent#. You live #inAHome#. #prizedThingSentence#',
+    'origin':                   'You, #protagonist#, were raised by #your parents# #in your childhood home#. Now you live #in your lair#, where you #do an activity#.',
+    'protagonist':              '#dragon name# the #dragon species#',
+    'your parents':             '#your parent# and #your parent#',
+    'your parent':              '#dragon name# the #dragon species#',
+    'in your childhood home':   '#in a place#',
+    'in your lair':             '#in a place#',
 
-    dragonName: '#_dragonName.capitalize#',
-    _dragonName: [
-        '#dragonNamePart##dragonNameFinalVowel#',
-        '#dragonNamePart##dragonNameFinalPart#',
-        '#dragonNamePart##_dragonName#',
-    ],
-    dragonNamePart: '#dragonNameVowel##dragonNameConsonant#',
-    dragonNameFinalPart: '#dragonNameVowel##dragonNameFinalConsonant#',
-    dragonNameConsonant: [
-        'b',
-        'c',
-        'm',
-        'r',
-        's',
-        'sh',
-        't',
-        'th',
-        'v',
-        'w',
-        'y',
-        'z',
-    ],
-    dragonNameFinalConsonant: [
-        'b',
-        'c',
-        'm',
-        'r',
-        's',
-        'sh',
-        't',
-        'th',
-        // no v
-        // no w
-        // no y
-        // no z
-    ],
-    dragonNameVowel: [
-        'a',
-        'aa',
-        'æ',
-        'au',
-        'e',
-        'ea',
-        'i',
-        'ii',
-        'o',
-        'u',
-        'y',
-    ],
-    dragonNameFinalVowel: [
-        'a',
-        // no aa
-        'æ',
-        // no au
-        'e',
-        'ea',
-        // no i
-        // no ii
-        // no o
-        'u',
-        // no y
-    ],
+    /* Species */
 
-    parent: '#dragonName# the #dragon#',
-    dragon: '#dragonType# dragon',
-    dragonType: [
+    'dragon species': '#dragon type# dragon',
+    'dragon type': [
         '#color#',
         '#gem#',
         '#metal#',
-        '#unusualDragonType#',
+        '#unusual dragon type#',
     ],
-    color: [
+    'color': [
         'black',
         'blue',
         'brown',
@@ -85,16 +28,16 @@ var grammar = tracery.createGrammar({
         'yellow',
         'white',
     ],
-    gem: [
+    'gem': [
         'amethyst',
         'diamond',
         'emerald',
         'ruby',
         'sapphire',
         'topaz',
-        '#unusualGem#',
+        '#unusual gem#',
     ],
-    unusualGem: [
+    'unusual gem': [
         'aquamarine',
         'bismuth',
         'bloodstone',
@@ -113,32 +56,24 @@ var grammar = tracery.createGrammar({
         'spinel',
         'turquoise',
     ],
-
-    metal: '#[damaged:tarnished][#setMetal#]_metal#',
-    _metal: '#maybeDamaged##name#',
-    maybeDamaged: [
-        '', '', '', '', '', '', '', '', '',
-        '#damaged# ',
+    'metal': [
+        'brass',
+        'bronze',
+        'copper',
+        'gold',
+        'iron',
+        'silver',
+        'steel',
+        '#unusual metal#',
     ],
-    setMetal: [
-        '[name:brass]',
-        '[name:bronze]',
-        '[name:copper]',
-        '[name:gold]',
-        '[name:iron][damaged:rusted]',
-        '[name:silver]',
-        '[name:steel][damaged:rusted]',
-        '#unusualMetal#',
+    'unusual metal': [
+        'adamantium',
+        'mercury',
+        'mithryl',
+        'platinum',
+        'titanium',
     ],
-    unusualMetal: [
-        '[name:adamantium][damaged:faded]',
-        '[name:mercury][damaged:contaminated]',
-        '[name:mithryl][damaged:faded]',
-        '[name:platinum]',
-        '[name:titanium]',
-    ],
-
-    unusualDragonType: [
+    'unusual dragon type': [
         'fairy',
         'galaxy',
         '#color# glitter',
@@ -146,9 +81,27 @@ var grammar = tracery.createGrammar({
         'rainbow',
         'translucent',
     ],
-    inAHome: 'in #prefixedHome.a#',
-    prefixedHome: '#homePrefix# #home#',
-    homePrefix: [
+
+    /* Names */
+
+    'dragon name': '#dragon name sub.capitalize#',
+    'dragon name sub': [
+        '#dragon name part##dragon name final vowel#',
+        '#dragon name part##dragon name final part#',
+        '#dragon name part##dragon name sub#',
+    ],
+    'dragon name part':             '#dragon name vowel##dragon name consonant#',
+    'dragon name final part':       '#dragon name vowel##dragon name final consonant#',
+    'dragon name consonant':        ['b', 'c', 'm', 'r', 's', 'sh', 't', 'th', 'v', 'w', 'y', 'z'],
+    'dragon name final consonant':  ['b', 'c', 'm', 'r', 's', 'sh', 't', 'th'],
+    'dragon name vowel':            ['a', 'aa', 'æ', 'au', 'e', 'ea', 'i', 'ii', 'o', 'u', 'y'],
+    'dragon name final vowel':      ['a',       'æ',       'e', 'ea',                 'u'],
+
+    /* Places */
+
+    'in a place':       'in #prefixed place.a#',
+    'prefixed place':   '#place prefix# #place#',
+    'place prefix': [
         'abandoned',
         'burnt',
         'flooded',
@@ -158,7 +111,7 @@ var grammar = tracery.createGrammar({
         'remote',
         'uncharted',
     ],
-    home: [
+    'place': [
         'cave',
         '#dungeon#',
         '#forest#',
@@ -168,28 +121,28 @@ var grammar = tracery.createGrammar({
         'swamp',
         '#town#',
         'valley',
-        '#activeOrInactive# volcano',
+        '#active or inactive# volcano',
     ],
-    dungeon: [
+    'dungeon': [
         'dungeon',
         'shrine',
         'temple',
     ],
-    forest: [
+    'forest': [
         'clearing',
         'forest',
         'grove',
         'mushroom forest',
         'wood',
     ],
-    house: [
+    'house': [
         'cottage',
         'house',
         'hut',
         'mansion',
         'shack',
     ],
-    town: [
+    'town': [
         'city',
         'hamlet',
         'metropolis',
@@ -197,49 +150,14 @@ var grammar = tracery.createGrammar({
         'town',
         'village',
     ],
-    activeOrInactive: [
+    'active or inactive': [
         'active',
         'inactive',
     ],
 
-    prizedThingSentence: [
-        "Of all the things in the world, you most treasure #prizedThing#.",
-        "The thing you prize most is #prizedThing#.",
-        "You assign the most value out of all things to #prizedThing#.",
-    ],
-    prizedThing: [
-        "books",
-        "#fairness#",
-        "#food#",
-        "#power#",
-        "#riches#",
-        "#vengeance#",
-    ],
-    fairness: [
-        "fairness",
-        "justice",
-    ],
-    food: [
-        "food",
-        "good food",
-        "sustenance",
-    ],
-    power: [
-        "might",
-        "power",
-        "strength",
-    ],
-    riches: [
-        "gems",
-        "gold",
-        "jewels",
-        "riches",
-        "treasure",
-    ],
-    vengeance: [
-        "revenge",
-        "vengeance",
-    ],
+    /* Activities */
+
+    'do an activity': 'TODO',
 })
 
 grammar.addModifiers(baseEngModifiers)
