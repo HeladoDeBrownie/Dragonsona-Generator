@@ -1,5 +1,5 @@
 var grammar = tracery.createGrammar({
-    'origin':                   'You, #protagonist#, were raised by #your parents# #in your childhood home#. Now you live #in your lair#, where you #do an activity#.',
+    'origin':                   'You, #protagonist#, were raised by #your parents# #in your childhood home#. Now you live #in your lair#, where you #do an activity#. #fact about you#',
     'protagonist':              '#dragon name# the #dragon species#',
     'your parents':             ['#two parents#', '#two parents#', '#two parents#', '#your parents sub#'],
     'two parents':              '#your parent# and #your parent#',
@@ -161,6 +161,27 @@ var grammar = tracery.createGrammar({
     /* Activities */
 
     'do an activity': 'TODO',
+
+    /* Facts */
+
+    'fact about you': [
+        'You are known for your #reknowned quality#.',
+        'Your scales are #scale quality#.',
+    ],
+    'reknowned quality': [
+        'ferocity',
+        'greed',
+        'kindheartedness',
+        'magnanimity',
+        'mercy',
+        'reclusiveness',
+        'short-temperedness',
+    ],
+    'scale quality': [
+        'as hard as diamond',
+        'scarred from many battles',
+        'smooth to the touch',
+    ],
 })
 
 grammar.addModifiers(baseEngModifiers)
