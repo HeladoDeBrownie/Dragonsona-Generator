@@ -11,11 +11,10 @@ var grammar = tracery.createGrammar({
 
     /* Species */
 
-    'dragon species': '#dragon type# dragon',
-    'dragon type': [
-        '#color#',
-        '#gem#',
-        '#metal#',
+    'dragon species': [
+        '#color# dragon',
+        '#gem# dragon',
+        '#metal# dragon',
         '#unusual dragon type#',
     ],
     'color': [
@@ -77,12 +76,13 @@ var grammar = tracery.createGrammar({
         'titanium',
     ],
     'unusual dragon type': [
-        'fairy',
-        'galaxy',
-        '#color# glitter',
-        'pseudo',
-        'rainbow',
-        'translucent',
+        'fairy dragon',
+        'fire lizard',
+        'galaxy dragon',
+        '#color# glitter dragon',
+        'pseudodragon',
+        'rainbow dragon',
+        'translucent dragon',
     ],
 
     /* Names */
