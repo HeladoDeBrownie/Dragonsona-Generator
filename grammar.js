@@ -1,7 +1,10 @@
 var grammar = tracery.createGrammar({
     'origin':                   'You, #protagonist#, were raised by #your parents# #in your childhood home#. Now you live #in your lair#, where you #do an activity#.',
     'protagonist':              '#dragon name# the #dragon species#',
-    'your parents':             '#your parent# and #your parent#',
+    'your parents':             ['#two parents#', '#two parents#', '#two parents#', '#your parents sub#'],
+    'two parents':              '#your parent# and #your parent#',
+    'your parents sub':         ['#your parent#', '#your parent#, #your parent#, and #your parent#', 'a commune of #commune species#'],
+    'commune species':          ['gnomes', 'humans', 'kobolds'],
     'your parent':              '#dragon name# the #dragon species#',
     'in your childhood home':   '#in a place#',
     'in your lair':             '#in a place#',
