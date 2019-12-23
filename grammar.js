@@ -166,6 +166,7 @@ var grammar = tracery.createGrammar({
 
     'fact about you': [
         'You are known for your #reknowned quality#.',
+        'You keep #pet species.a# as a pet.',
         'Your scales are #scale quality#.',
     ],
     'reknowned quality': [
@@ -176,6 +177,29 @@ var grammar = tracery.createGrammar({
         'mercy',
         'reclusiveness',
         'short-temperedness',
+    ],
+    'pet species': [
+        'cat',
+        'fire lizard',
+        'gnome',
+        'human',
+        'kobold',
+        '#element# weird',
+    ],
+    'element': [
+        'air',
+        'earth',
+        'fire',
+        'water',
+        '#unusual element#',
+    ],
+    'unusual element': [
+        'cloud',
+        'lightning',
+        'magma',
+        'mud',
+        'smog',
+        'steam',
     ],
     'scale quality': [
         'as hard as diamond',
