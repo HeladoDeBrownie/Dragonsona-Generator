@@ -160,7 +160,31 @@ var grammar = tracery.createGrammar({
 
     /* Activities */
 
-    'do an activity': 'TODO',
+    'do an activity': [
+        'guard your #riches#',
+        'sleep almost all of the time',
+    ],
+    'riches': 'hoard of #hoard items#',
+    'hoard items': [
+        '#art items#',
+        'gems',
+        'gold',
+        'magical artifacts',
+        '#unusual hoard items#',
+    ],
+    'art items': [
+        'figurines',
+        'paintings',
+        'statues',
+    ],
+    'unusual hoard items': [
+        'baked goods',
+        '#pet species# clothing',
+        'cutlery',
+        'napkins',
+        'plushies',
+        'rocks',
+    ],
 
     /* Facts */
 
