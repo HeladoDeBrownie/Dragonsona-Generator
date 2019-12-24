@@ -72,3 +72,11 @@ button {
 .quartz { color: lightgrey; }
 .spinel { color: pink; }
 .turquoise { color: skyblue; }
+
+.rainbow:nth-of-type(7n+1) { color: red; }
+.rainbow:nth-of-type(7n+2) { color: orange; }
+.rainbow:nth-of-type(7n+3) { color: yellow; }
+.rainbow:nth-of-type(7n+4) { color: green; }
+.rainbow:nth-of-type(7n+5) { color: blue; }
+.rainbow:nth-of-type(7n+6) { color: indigo; }
+.rainbow:nth-of-type(7n+7) { color: violet; }
