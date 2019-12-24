@@ -4,7 +4,7 @@ var grammar = tracery.createGrammar({
     'your parents':             ['#two parents#', '#two parents#', '#two parents#', '#your parents sub#'],
     'two parents':              '#your parent# and #your parent#',
     'your parents sub':         ['#your parent#', '#your parent#, #your parent#, and #your parent#', 'a commune of #commune species#'],
-    'commune species':          ['gnomes', 'humans', 'kobolds'],
+    'commune species':          ['fire lizards', 'gnomes', 'humans', 'kobolds'],
     'your parent':              '#dragon name# the #dragon species#',
     'in your childhood home':   '#in a place#',
     'in your lair':             '#in a place#',
@@ -13,9 +13,8 @@ var grammar = tracery.createGrammar({
 
     'dragon species': [
         '#color# dragon',
-        '#gem# dragon',
-        '#metal# dragon',
-        '#unusual dragon type#',
+        '#mineral# dragon',
+        '#unusual dragon species#',
     ],
     'color': [
         'black',
@@ -29,6 +28,10 @@ var grammar = tracery.createGrammar({
         'red',
         'yellow',
         'white',
+    ],
+    'mineral': [
+        '#gem#',
+        '#metal#',
     ],
     'gem': [
         'amethyst',
@@ -75,7 +78,7 @@ var grammar = tracery.createGrammar({
         'platinum',
         'titanium',
     ],
-    'unusual dragon type': [
+    'unusual dragon species': [
         'fairy dragon',
         'fire lizard',
         'galaxy dragon',
@@ -191,6 +194,7 @@ var grammar = tracery.createGrammar({
     'fact about you': [
         'You are known for your #reknowned quality#.',
         'You keep #pet species.a# as a pet.',
+        'Your most prized possession is #your most prized possession#.',
         'Your scales are #scale quality#.',
     ],
     'reknowned quality': [
@@ -199,7 +203,9 @@ var grammar = tracery.createGrammar({
         'kindheartedness',
         'magnanimity',
         'mercy',
+        'mighty roar',
         'reclusiveness',
+        'sense of justice',
         'short-temperedness',
     ],
     'pet species': [
@@ -225,8 +231,18 @@ var grammar = tracery.createGrammar({
         'smog',
         'steam',
     ],
+    'your most prized possession': [
+        'a finely cut #gem#',
+        'a tome of lost knowledge',
+        'the skull of #slayer species.a# who failed to slay you',
+        'your wits',
+    ],
+    'slayer species': [
+        '#dragon species#',
+        'human',
+    ],
     'scale quality': [
-        'as hard as diamond',
+        'as hard as #mineral#',
         'scarred from many battles',
         'smooth to the touch',
     ],
