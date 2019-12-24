@@ -32,3 +32,43 @@ button {
 .information {
     font-size:  75%;
 }
+
+/* dragon species styles */
+
+.black { color: black; }
+.blue { color: blue; }
+.brown { color: brown; }
+.cyan { color: cyan; }
+.grey { color: grey; }
+.green { color: green; }
+.magenta { color: magenta; }
+.purple { color: purple; }
+.red { color: red; }
+.yellow { color: yellow; }
+.white { color: white; }
+
+.amethyst { color: purple; }
+.diamond { color: white; }
+.emerald { color: green; }
+.ruby { color: red; }
+.sapphire { color: blue; }
+.topaz { color: yellow; }
+
+.agate { color: brown; }
+.aquamarine { color: paleturquoise; }
+.bismuth { color: white; }
+.bloodstone { color: darkred; }
+.coal { color: black; }
+.garnet { color: darkred; }
+.jade { color: palegreen; }
+.jasper { color: orangered; }
+.lapislazuli { color: darkblue; }
+.moonstone { color: lightgrey; }
+.obsidian { color: black; }
+.onyx { color: black; }
+.opal { color: white; }
+.pearl { color: white; }
+.peridot { color: yellowgreen; }
+.quartz { color: lightgrey; }
+.spinel { color: pink; }
+.turquoise { color: skyblue; }
