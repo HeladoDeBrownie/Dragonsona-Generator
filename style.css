@@ -35,6 +35,11 @@ button {
 
 /* dragon species styles */
 
+.black, .coal, .obsidian, .onyx { text-shadow: 0px 0px 2px white; }
+.blue, .sapphire, .lapislazuli { text-shadow: 0px 0px 1px lightblue; }
+.brown, .agate, .bloodstone, .garnet { text-shadow: 0px 0px 1px pink; }
+.rainbow { text-shadow: 0px 0px 1px white; }
+
 .black { color: black; }
 .blue { color: blue; }
 .brown { color: brown; }
