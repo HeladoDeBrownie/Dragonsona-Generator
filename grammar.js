@@ -310,7 +310,7 @@ var grammar = tracery.createGrammar({
         'gnome',
         'human',
         'kobold',
-        '#element# weird',
+        '#element# elemental',
     ],
     'element': [
         'air',
