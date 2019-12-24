@@ -15,6 +15,7 @@ body {
     margin-right: auto;
     margin-top: 128px;
     max-width: 32em;
+    padding: 1em;
 }
 
 a {
