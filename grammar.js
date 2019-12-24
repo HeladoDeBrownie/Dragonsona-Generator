@@ -165,7 +165,11 @@ var grammar = tracery.createGrammar({
 
     /* Activities */
 
-    'do an activity': 'guard your hoard of #hoard items# and #do another activity#',
+    'do an activity': [
+        'guard your hoard of #hoard items#',
+        '#make something#',
+        'study #subject of study#',
+    ],
     'hoard items': [
         '#art items#',
         'gems',
@@ -186,10 +190,6 @@ var grammar = tracery.createGrammar({
         'napkins',
         'plushies',
         'rocks',
-    ],
-    'do another activity': [
-        '#make something#',
-        'study #subject of study#',
     ],
     'make something': [
         'knit #knitted items#',
