@@ -46,7 +46,7 @@ var grammar = tracery.createGrammar({
     'unusual gem': [
         '<span class="agate">agate</span>',
         '<span class="aquamarine">aquamarine</span>',
-        '<span class="bismuth">b</span><span class="bismuth">i</span><span class="bismuth">s</span><span class="bismuth">m</span><span class="bismuth">u</span><span class="bismuth">t</span><span class="bismuth">h</span>',
+        '<span class="bismuth bismuth-#bismuth color#" style="background-image: linear-gradient(to right, #bismuth color#, #bismuth color#, #bismuth color#);">bismuth</span>',
         '<span class="bloodstone">bloodstone</span>',
         '<span class="coal">coal</span>',
         '<span class="garnet">garnet</span>',
@@ -62,6 +62,15 @@ var grammar = tracery.createGrammar({
         '<span class="quartz">quartz</span>',
         '<span class="spinel">spinel</span>',
         '<span class="turqoise">turquoise</span>',
+    ],
+    'bismuth color': [
+        'pink',
+        'orange',
+        'yellow',
+        'green',
+        'blue',
+        'indigo',
+        'violet',
     ],
     'metal': [
         'brass',
@@ -86,7 +95,7 @@ var grammar = tracery.createGrammar({
         'galaxy dragon',
         '#color# glitter dragon',
         'pseudodragon',
-        '<span class="rainbow">r</span><span class="rainbow">a</span><span class="rainbow">i</span><span class="rainbow">n</span><span class="rainbow">b</span><span class="rainbow">o</span><span class="rainbow">w</span><span class="rainbow"> </span><span class="rainbow">d</span><span class="rainbow">r</span><span class="rainbow">a</span><span class="rainbow">g</span><span class="rainbow">o</span><span class="rainbow">n</span>',
+        '<span class="rainbow">rainbow</span> dragon',
         'translucent dragon',
     ],
 
