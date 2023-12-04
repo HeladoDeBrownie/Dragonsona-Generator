@@ -87,16 +87,22 @@ button {
 .spinel { color: pink; }
 .turquoise { color: skyblue; }
 
-.rainbow, .bismuth {
+.brass, .bronze, .copper, .gold, .iron, .silver, .steel, .rainbow, .bismuth {
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
     font-weight: bold;
 }
 
-.rainbow {
-    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
-}
+.brass { background-image: linear-gradient(0.125turn, brown, orange); }
+.bronze { background-image: linear-gradient(0.125turn, brown, yellow); }
+.copper { background-image: linear-gradient(0.125turn, brown, orangered); }
+.gold { background-image: linear-gradient(0.125turn, gold, goldenrod); }
+.iron { background-image: linear-gradient(0.125turn, gray, silver); }
+.silver { background-image: linear-gradient(0.125turn, silver, white); }
+.steel { background-image: linear-gradient(0.125turn, lightgray, white); }
+
+.rainbow { background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); }
 
 .bismuth-red { -webkit-text-stroke: 1px red; }
 .bismuth-orange { -webkit-text-stroke: 1px orange; }
