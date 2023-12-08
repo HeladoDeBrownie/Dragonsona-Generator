@@ -1,10 +1,11 @@
 var grammar = tracery.createGrammar({
-    'origin':                   'You, #protagonist#, were raised by #your parents# #in your childhood home#. #Now you live somewhere#, where you #do an activity#. #fact about you#',
-    'protagonist':              '#dragon name# the #dragon species#',
+    'origin':                   '[#lineage!#]You, #protagonist#, were raised by #your parents?# #in your childhood home#. #Now you live somewhere#, where you #do an activity#. #fact about you#',
+    'lineage!':                 '[your name?:#dragon name#][your parents?:#your parents#]',
+    'protagonist':              '#your name?# the #dragon species#',
     'your parents':             ['#two parents#', '#two parents#', '#two parents#', '#your parents sub#'],
     'two parents':              '#your parent# and #your parent#',
     'your parents sub':         ['#your parent#', '#your parent#, #your parent#, and #your parent#', 'a commune of #commune species#'],
-    'commune species':          ['fire lizards', 'gnomes', 'humans', 'kobolds'],
+    'commune species':          ['fire lizards', 'gnomes', 'humans', '[your name?:#kobold name#]kobolds'],
     'your parent':              '#dragon name# the #dragon species#',
     'Now you live somewhere':  ['Now you live #in your lair#', 'Now you live #in your lair#', 'Now you live #in your lair#', 'You remain there still'],
     'in your childhood home':   '#in a place#',
@@ -113,6 +114,14 @@ var grammar = tracery.createGrammar({
     'dragon name final consonant':  ['b', 'c', 'm', 'r', 's', 'sh', 't', 'th'],
     'dragon name vowel':            ['a', 'aa', 'æ', 'au', 'e', 'ea', 'i', 'ii', 'o', 'u', 'y'],
     'dragon name final vowel':      ['a',       'æ',       'e', 'ea',                 'u'],
+
+    'kobold name': '#kobold name nucleus.capitalize##kobold name end#',
+    'kobold name nucleus': '#kobold consonant##kobold vowel#',
+    'kobold name end': ['#kobold consonant#', '#kobold name nucleus#'],
+    'kobold consonant': ['b', 'k', 'n', 'r', 't', 'x', 'z'],
+    'kobold vowel': ['a', 'e', 'i', 'o', 'u', '#kobold long vowel#', '#kobold iotated vowel#'],
+    'kobold long vowel': ['aa', 'ee', 'oo', 'uu'],
+    'kobold iotated vowel': ['ya', 'ye', 'yo', 'yu'],
 
     /* Places */
 
