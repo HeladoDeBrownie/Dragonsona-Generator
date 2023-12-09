@@ -253,6 +253,7 @@ var grammar = tracery.createGrammar({
     'do an activity': [
         'guard your hoard of #hoard items#',
         '#make something#',
+        'pass the days #doing a pastime#',
         'study #subject of study#',
     ],
     'hoard items': [
@@ -298,6 +299,29 @@ var grammar = tracery.createGrammar({
         'wood',
         '#mineral#',
     ],
+    'doing a pastime': [
+        'admiring the local architecture',
+        'cloud watching',
+        'counting your treasures',
+        'doing nothing of note',
+        'idly pondering',
+        'napping',
+        'reading #reading material#',
+    ],
+    'reading material': [
+        '#novel type# novels',
+        'religious texts',
+        'spellbooks',
+        'town papers',
+        'white papers',
+    ],
+    'novel type': [
+        'bawdy',
+        'cheap',
+        'fantastical',
+        'trashy',
+        'weird',
+    ],
     'subject of study': [
         'art',
         'botany',
@@ -307,6 +331,7 @@ var grammar = tracery.createGrammar({
         'mathematics',
         'music',
         'philosophy',
+        '#theater#',
         'tinkering',
         '#unusual subject of study#',
     ],
@@ -341,6 +366,13 @@ var grammar = tracery.createGrammar({
         'runes',
         'shadow magic',
         'transmutation',
+    ],
+    'theater': [
+        'opera',
+        'playwrighting',
+        'prop design',
+        'soliloquys',
+        'theater',
     ],
     'unusual subject of study': [
         'agriculture',
