@@ -13,10 +13,45 @@ var grammar = tracery.createGrammar({
 
     /* Species */
 
-    'dragon species': [
+    'dragon species': '#maybe two-headed##dragon species_#',
+    'maybe two-headed': ['', '', '', '', '', '', '', '#maybe two-headed_#'],
+    'maybe two-headed_': ['', '', '', '', '', '', '', 'two-headed '],
+    'dragon species_': [
+        '#common species#',
+        '#common species#',
+        '#common species#',
+        '#common species#',
+        '#common species#',
+        '#common species#',
+        '#common species#',
+        '#dragon species__#',
+    ],
+    'dragon species__': [
+        '#common species#',
+        '#common species#',
+        '#common species#',
+        '#common species#',
+        '#common species#',
+        '#common species#',
+        '#common species#',
+        '#two-tone dragon#',
+    ],
+    'common species': [
+        '#color# dragon',
+        '#color# dragon',
+        '#color# dragon',
         '#color# dragon',
         '#mineral# dragon',
+        '#mineral# dragon',
+        '#mineral# dragon',
         '#unusual dragon species#',
+    ],
+    'two-tone dragon': [
+        '#color# and #color# dragon',
+        '#color# and #color# dragon',
+        '#color# and #color# dragon',
+        '#mineral# and #mineral# dragon',
+        '#mineral# and #mineral# dragon',
     ],
     'color': [
         '<span class="black">black</span>',
