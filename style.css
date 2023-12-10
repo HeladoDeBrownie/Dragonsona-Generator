@@ -63,6 +63,10 @@ button {
 .yellow { color: yellow; }
 .white { color: white; }
 
+.amethyst, .diamond, .emerald, .ruby, .sapphire, .topaz, .agate, .aquamarine, .bloodstone, .coal, .garnet, .jade, .jasper, .lapislazuli, .moonstone, .obsidian, .onyx, .opal, .pearl, .peridot, .quartz, .spinel, .turquoise {
+    font-weight: bold;
+}
+
 .amethyst { color: purple; }
 .diamond { color: white; }
 .emerald { color: green; }
