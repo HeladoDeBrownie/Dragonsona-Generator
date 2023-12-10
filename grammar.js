@@ -266,6 +266,7 @@ var grammar = tracery.createGrammar({
         'dolls',
         'figurines',
         'paintings',
+        'sonnets',
         'statues',
     ],
     'unusual hoard items': [
@@ -279,9 +280,11 @@ var grammar = tracery.createGrammar({
     'make something': [
         'knit #knitted items#',
         'sculpt #sculpting material#',
+        'write #novel type# novels',
     ],
     'knitted items': [
         'blankets',
+        'cozies',
         'hats',
         'rugs',
         'scarves',
@@ -293,6 +296,7 @@ var grammar = tracery.createGrammar({
     'sculpting material': [
         'clay',
         'dirt',
+        'fire',
         'flesh',
         'ice',
         'wood',
@@ -322,6 +326,7 @@ var grammar = tracery.createGrammar({
         'weird',
     ],
     'subject of study': [
+        'animal husbandry',
         'art',
         'botany',
         '#combat#',
@@ -336,9 +341,11 @@ var grammar = tracery.createGrammar({
     ],
     'combat': [
         'archery',
+        'fencing',
         'martial arts',
         'siegecraft',
         'swordsmanship',
+        'wrestling',
     ],
     'magic': [
         'abjuration',
@@ -421,6 +428,7 @@ var grammar = tracery.createGrammar({
         'unpredictability',
     ],
     'pet species': [
+        '#bird#',
         'cat',
         'fire lizard',
         'gnome',
@@ -428,15 +436,30 @@ var grammar = tracery.createGrammar({
         'kobold',
         '#element# elemental',
     ],
+    'bird': [
+        '#corvid#',
+        'parakeet',
+        'parrot',
+        'pigeon',
+        'snipe',
+    ],
+    'corvid': [
+        'bluejay',
+        'crow',
+        'magpie',
+        'raven',
+    ],
     'element': [
         'air',
         'earth',
         'fire',
         'water',
+        'wood',
         '#unusual element#',
     ],
     'unusual element': [
         'cloud',
+        'ice',
         'lightning',
         'magma',
         'mud',
@@ -445,9 +468,14 @@ var grammar = tracery.createGrammar({
     ],
     'your most prized possession': [
         'a finely cut #gem#',
+        'a set of fine #fine items#',
         'a tome of lost knowledge',
         'the skull of #slayer species.a# who failed to slay you',
         'your wits',
+    ],
+    'fine items': [
+        '#unusual hoard items#',
+        '#knitted items#',
     ],
     'slayer species': [
         '#dragon species#',
